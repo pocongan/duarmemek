@@ -5,8 +5,8 @@ ulang:
 // function change(){
 echo color("red","               POCONG VOCER GOJEK \n");
 echo color("white","           Time  : ".date('[d-m-Y] [H:i:s]')."   \n");
-echo color("red","                POCONGAN GOJEK        \n");
-echo color("green","             NOMOR FORMAT(62) \n");
+echo color("red","               POCONGAN GOJEK        \n");
+echo color("green","           NOMOR FORMAT(62) \n");
         $nama = nama();
         $email = str_replace(" ", "", $nama) . mt_rand(100, 999);
         echo color("green"," NOMOR TOGEL : ");
@@ -48,7 +48,7 @@ echo color("green","             NOMOR FORMAT(62) \n");
         $uuid = getStr('"resource_owner_id":',',',$verif);
         echo color("white","+] Your access token : ".$token."\n\n");
         save("token.txt",$token); 
-        echo color("white","\n▬▬GAS KALO GADAPET PAKEIN LOKASI FAKE TITIKIN DI BANDUNG▬▬");
+        echo color("green","\n▬▬KALAU NGGAK DAPET NANGIS DI POJOKAN YA▬▬");
         echo "\n".color("green","SABAR JHONNN?!!..");
         echo "\n".color("white"," Please wait");
         for($a=1;$a<=3;$a++){
@@ -117,9 +117,9 @@ echo color("green","             NOMOR FORMAT(62) \n");
         echo "\n".color("white","                     2. ".$voucher2);
         echo "\n".color("yellow","                     3. ".$voucher3);
         echo "\n".color("yellow","                     4. ".$voucher4);
-        echo "\n".color("yellow","                     5. ".$voucher5);
-        echo "\n".color("yellow","                     6. ".$voucher6);
-        echo "\n".color("yellow","                     7. ".$voucher7);
+        echo "\n".color("white","                     5. ".$voucher5);
+        echo "\n".color("white","                     6. ".$voucher6);
+        echo "\n".color("white","                     7. ".$voucher7);
         echo "\n".color("white","                     8. ".$voucher8);
         echo "\n".color("white","                     9. ".$voucher9);
         echo "\n".color("white","                     10. ".$voucher10);
