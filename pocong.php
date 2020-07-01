@@ -3,13 +3,13 @@ date_default_timezone_set('Asia/Bandung');
 include "function.php";
 ulang:
 // function change(){
-echo color("red","          POCONG VOCER GOJEK TUBE\n");
+echo color("red","               POCONG VOCER GOJEK \n");
 echo color("white","           Time  : ".date('[d-m-Y] [H:i:s]')."   \n");
-echo color("red","  POCONGAN GOJEK        \n");
-echo color("yellow","          NOMOR FORMAT(62) \n");
+echo color("red","                POCONGAN GOJEK        \n");
+echo color("green","             NOMOR FORMAT(62) \n");
         $nama = nama();
         $email = str_replace(" ", "", $nama) . mt_rand(100, 999);
-        echo color("green"," NOMOR FRESH : ");
+        echo color("green"," NOMOR TOGEL : ");
         // $no = trim(fgets(STDIN));
         $nohp = trim(fgets(STDIN));
         $nohp = str_replace("62","62",$nohp);
@@ -170,8 +170,8 @@ echo color("yellow","          NOMOR FORMAT(62) \n");
          $pilih1 = trim(fgets(STDIN));
          if($pilih1 == "y" || $pilih1 == "Y"){
          //if($pilih1 == "y" && strpos($no, "628")){
-         echo color("white","▬▬▬▬▬▬▬▬▬▬▬▬▬▬ PIN MU = 112233 ▬▬▬▬▬▬▬▬▬▬▬▬")."\n";
-         $data2 = '{"pin":"112233"}';
+         echo color("green","▬▬▬▬▬▬▬▬▬▬▬▬▬▬ PIN MU = 123123 ▬▬▬▬▬▬▬▬▬▬▬▬")."\n";
+         $data2 = '{"pin":"123123"}';
          $getotpsetpin = request("/wallet/pin", $token, $data2, null, null, $uuid);
          echo "Otp pin: ";
          $otpsetpin = trim(fgets(STDIN));
