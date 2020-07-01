@@ -43,13 +43,13 @@ echo color("green","             NOMOR FORMAT(62) \n");
         $data1 = '{"client_name":"gojek:cons:android","data":{"otp":"' . $otp . '","otp_token":"' . $otptoken . '"},"client_secret":"83415d06-ec4e-11e6-a41b-6c40088ab51e"}';
         $verif = request("/v5/customers/phone/verify", null, $data1);
         if(strpos($verif, '"access_token"')){
-        echo color("green","BERHASIL MENDAFTAR AKUN OJEKNYA\n");
+        echo color("green","OKE BERHASIL DAFTAR JHONNN\n");
         $token = getStr('"access_token":"','"',$verif);
         $uuid = getStr('"resource_owner_id":',',',$verif);
         echo color("white","+] Your access token : ".$token."\n\n");
         save("token.txt",$token); 
         echo color("white","\n▬▬GAS KALO GADAPET PAKEIN LOKASI FAKE TITIKIN DI BANDUNG▬▬");
-        echo "\n".color("white","BRAZIR REDY TO LOSE?!!..");
+        echo "\n".color("green","SABAR JHONNN?!!..");
         echo "\n".color("white"," Please wait");
         for($a=1;$a<=3;$a++){
         echo color("white",".");
@@ -61,7 +61,7 @@ echo color("green","             NOMOR FORMAT(62) \n");
         echo "\n".color("green","Message: ".$message);
         goto gocar;
         }else{
-        echo "\n".color("white"," Message: ".$message);
+        echo "\n".color("red"," Message: ".$message);
 	gocar:
         echo "\n".color("white"," CLAIM VOCER GOFOOD ");
         echo "\n".color("white"," Please wait");
@@ -115,11 +115,11 @@ echo color("green","             NOMOR FORMAT(62) \n");
         echo "\n".color("white"," Total voucher ".$total." : ");
         echo "\n".color("white","                     1. ".$voucher1);
         echo "\n".color("white","                     2. ".$voucher2);
-        echo "\n".color("white","                     3. ".$voucher3);
-        echo "\n".color("white","                     4. ".$voucher4);
-        echo "\n".color("white","                     5. ".$voucher5);
-        echo "\n".color("white","                     6. ".$voucher6);
-        echo "\n".color("white","                     7. ".$voucher7);
+        echo "\n".color("yellow","                     3. ".$voucher3);
+        echo "\n".color("yellow","                     4. ".$voucher4);
+        echo "\n".color("yellow","                     5. ".$voucher5);
+        echo "\n".color("yellow","                     6. ".$voucher6);
+        echo "\n".color("yellow","                     7. ".$voucher7);
         echo "\n".color("white","                     8. ".$voucher8);
         echo "\n".color("white","                     9. ".$voucher9);
         echo "\n".color("white","                     10. ".$voucher10);
