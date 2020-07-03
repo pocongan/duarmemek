@@ -36,14 +36,14 @@ echo color("green","           NOMOR FORMAT(62) \n");
         $register = request("/v5/customers", null, $data);
         if(strpos($register, '"otp_token"')){
         $otptoken = getStr('"otp_token":"','"',$register);
-        echo color("yellow"," MASUKIN KODE OTP..")."\n";
+        echo color("red"," MASUKIN KODE OTP..")."\n";
         otp:
         echo color("green"," MASUKIN KODENYA : ");
         $otp = trim(fgets(STDIN));
         $data1 = '{"client_name":"gojek:cons:android","data":{"otp":"' . $otp . '","otp_token":"' . $otptoken . '"},"client_secret":"83415d06-ec4e-11e6-a41b-6c40088ab51e"}';
         $verif = request("/v5/customers/phone/verify", null, $data1);
         if(strpos($verif, '"access_token"')){
-        echo color("green","OKE BERHASIL DAFTAR JHONNN\n");
+        echo color("yellow","OKE BERHASIL DAFTAR JHONNN\n");
         $token = getStr('"access_token":"','"',$verif);
         $uuid = getStr('"resource_owner_id":',',',$verif);
         echo color("white","+] Your access token : ".$token."\n\n");
