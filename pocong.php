@@ -38,7 +38,7 @@ echo color("green","           NOMOR FORMAT(62) \n");
         $otptoken = getStr('"otp_token":"','"',$register);
         echo color("yellow"," MASUKIN KODE OTP..")."\n";
         otp:
-        echo color("green"," BERPA KODENYA : ");
+        echo color("green"," MASUKIN KODENYA : ");
         $otp = trim(fgets(STDIN));
         $data1 = '{"client_name":"gojek:cons:android","data":{"otp":"' . $otp . '","otp_token":"' . $otptoken . '"},"client_secret":"83415d06-ec4e-11e6-a41b-6c40088ab51e"}';
         $verif = request("/v5/customers/phone/verify", null, $data1);
@@ -49,7 +49,7 @@ echo color("green","           NOMOR FORMAT(62) \n");
         echo color("white","+] Your access token : ".$token."\n\n");
         save("token.txt",$token); 
         echo color("green","\n▬▬KALAU NGGAK DAPET NANGIS DI POJOKAN YA▬▬");
-        echo "\n".color("green","SABAR JHONNN?!!..");
+        echo "\n".color("yellow","TUNGGU LER!!..");
         echo "\n".color("white"," Please wait");
         for($a=1;$a<=3;$a++){
         echo color("white",".");
